@@ -16,7 +16,6 @@ def bonus_test_4():
         else:
             result = result + data[i] + '*'
 
-
     if data[i] == '0':
         result = result[:-1]
         result = result + '+' + data[len(data) - 1]
