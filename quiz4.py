@@ -16,8 +16,11 @@ def bonus_test_4():
         else:
             result = result + data[i] + '*'
 
-    if data[i] == '0':
+    if data[len(data) - 1] == '0':
         result = result[:-1]
         result = result + '+' + data[len(data) - 1]
 
+    else:
+        result = result + data[len(data) - 1]
+        
     print(f'결과는 {eval(result)}입니다.')
